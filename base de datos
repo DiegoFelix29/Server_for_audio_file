@@ -1,0 +1,21 @@
+###### CREAS UNA BASE DE DATOS CO EL SIGUIENTE COMANDO
+
+   create database Audios;
+  
+###### TRABAJAR EN LA BASE DE DATOS QUE QUIERAS USAS 
+
+    use Audios;
+
+##### CREAR UNA TABLA
+
+   create table File (Usuario VARCHAR(50),Audio BLOB,Detalles VARCHAR(150),Duracion VARCHAR(50));
+
+
+##### INSERTAR VALORES A LA TABLA
+
+  insert NOMBREDELATABLA values (, ..., .... , ..... , ....);
+
+#### MOSTRAR VAORES CON CONSUTAS IGUAL Q EN SQ CTV
+
+
+   select * from File;
