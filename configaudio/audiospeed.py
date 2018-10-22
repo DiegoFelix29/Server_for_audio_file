@@ -2,7 +2,6 @@ from pydub import AudioSegment
 import controller
 
 def speed_change(sound,speed,path,filename):
-    # Manually override the frame_rate. This tells the computer how many
     # samples to play per second
     filename=filename.split(".")
     destino=path+"/"+filename[0]+"_slow"+"."+filename[1]    
@@ -14,7 +13,7 @@ def speed_change(sound,speed,path,filename):
     slow_sound.export(destino,format="wav")
 
     ###ingresando a bd
-    controller.main(destino)
+    controller.main(destino,duration,date)
 
 
 def input_pathaudio(audiopath,filename):

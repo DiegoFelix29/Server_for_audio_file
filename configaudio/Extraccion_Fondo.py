@@ -18,7 +18,7 @@ def Extrac_Sonido(paths,filename):
 	sound_CentersOut.export(destino, format="wav")
 
 	#ingreso a bd
-	controller.main(destino)
+	controller.main(destino,duration,date)
 
 
 	fil=filename[0]+"fondo.wav"

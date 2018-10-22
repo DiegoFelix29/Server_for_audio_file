@@ -12,7 +12,7 @@ def audio(path,filename):
 	destino=path+"/"+filename[0]+"_features.wav"
 
 	#ingreso a bd
-	controller.main(destino)
+	controller.main(destino,duration,date)
 
 	return(filename[0]+"_features.wav")
 

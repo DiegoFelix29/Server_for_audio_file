@@ -4,7 +4,6 @@ from pydub import AudioSegment
 import soundfile as sf
 import controller
 
-
 def separate_audio(paths,filename):
 	#tiempo total en segundos
 	s_extension=path.split(".")
@@ -35,7 +34,7 @@ def separate_audio(paths,filename):
 		audio.export(destino,format="wav")
 		
 		#ingreso a bd
-		controller.main(destino)
+		controller.main(destino,duration,date)
 
 		j=j+30000
 		k=k+30000
@@ -49,4 +48,4 @@ def separate_audio(paths,filename):
 			audio.export(destino,format="wav")
 
 			#ingreso a bd
-			controller.main(destino)
+			controller.main(destino,duration,date)
