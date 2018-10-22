@@ -13,7 +13,11 @@ def speed_change(sound,speed,path,filename):
     slow_sound.export(destino,format="wav")
 
     ###ingresando a bd
+<<<<<<< HEAD
     controller.main(destino,duration,date)
+=======
+    controller.main(destino)
+>>>>>>> master
 
 
 def input_pathaudio(audiopath,filename):

@@ -5,6 +5,7 @@ import sys
 def Connect():
 	_host='localhost'
 	_user='root'
+<<<<<<< HEAD
 	_passwd='diego'
 	_db='Audios'
 
@@ -13,6 +14,16 @@ def Connect():
 		              	  user=_user,           # tu usuario
 		                  passwd=_passwd,  	# tu password
 		                  db=_db) 		# el nombre de la base de datos
+=======
+	_passwd='jacobo'
+	_db='Audios'
+
+	try:
+		con = mdb.connect(host=_host,    # tu host, usualmente localhost
+		              	  user=_user,         # tu usuario
+		                  passwd=_passwd,  # tu password
+		                  db=_db) # el nombre de la base de datos
+>>>>>>> master
 		print("conectado")
 		return con	
 
