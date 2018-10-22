@@ -8,11 +8,9 @@ import spte_noise
 
 def audio(file,paths,filenames):
       
-
 	file.save(os.path.join(paths,filenames))
 
 	#convert to format wav with features 
-	#"name " is the name of audio file 
 	name=convert_wav_with_features.audio(paths,filenames)
 
 	#modify audio speed to 0.5

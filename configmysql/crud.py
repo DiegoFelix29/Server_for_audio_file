@@ -14,8 +14,3 @@ def Insert(usuario,path,date,duration):
 	
 	c.close()
 
-#def Update():
-	#Metodo para actualizar registros
-
-#def Delete():
-	#Metodo para eliminar registros
